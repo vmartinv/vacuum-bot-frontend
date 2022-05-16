@@ -1,0 +1,35 @@
+body{
+  background-color: #fdfbfb;
+}
+
+.joystick {
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button.control {
+    background: url('/static/img/button.png') 0 0 no-repeat;
+    border: 0;
+    width: 35px;
+    height: 27px;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+}
+button.control:active {
+  background: url('/static/img/button_pressed.png') 0 0 no-repeat;
+}
+button.forward {
+  transform: translate(-50%, -310%);
+}
+button.back {
+  transform: translate(-50%, 230%) rotate(180deg);
+}
+button.left {
+  transform: translate(-260%, -50%) rotate(-90deg);
+}
+button.right {
+  transform: translate(160%, -50%) rotate(90deg);
+}

@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Martinbot {% endblock %}
+{% block content %}
+
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<div class="game">
+  <img src="{{ url_for('static', filename='img/joystick.png') }}" class="joystick"/>
+  <button class="forward control" value="forward"/>
+  <button class="left control" value="left"/>
+  <button class="right control" value="right"/>
+</div>
+{% endblock %}
